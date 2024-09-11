@@ -14,14 +14,14 @@ const App = () => {
   };
 
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router>
       <Header
         showFavorites={showFavorites}
         toggleShowFavorites={toggleShowFavorites}
       />
       <Routes>
         <Route
-          path="/products"
+          path="/product"
           element={<ProductList showFavorites={showFavorites} />}
         />
         <Route path="/products/:id" element={<ProductDetail />} />
