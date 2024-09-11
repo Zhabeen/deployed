@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #717171;
+  padding: 23px 0 22px;
+  min-height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between; /* Размещаем элементы внутри контейнера */
+  align-items: center;
+  width: 100%;
+}
+.logo {
+  height: 100px; /* Задаем корректную высоту логотипа */
+  width: auto; /* Ширина будет автоматически пропорциональна высоте */
+  cursor: pointer;
+}
+
+.filter {
+  background-color: coral;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 10px;
+}
