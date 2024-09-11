@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import ProductList from "./components/productList";
 import ProductDetail from "./components/ProductDetail";
 import Header from "./components/Header";
@@ -14,7 +14,7 @@ const App = () => {
   };
 
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Header
         showFavorites={showFavorites}
         toggleShowFavorites={toggleShowFavorites}
