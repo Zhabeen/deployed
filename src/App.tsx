@@ -1,4 +1,9 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Navigate,
+} from "react-router-dom";
 import ProductList from "./components/productList";
 import ProductDetail from "./components/ProductDetail";
 import Header from "./components/Header";
@@ -27,6 +32,7 @@ const App = () => {
         <Route path="/products/:id" element={<ProductDetail />} />
         <Route path="/create-product" element={<CreateProduct />} />
         <Route path="/edit-product/:id" element={<EditProduct />} />
+        <Route path="/" element={<Navigate to="/products" />} />
       </Routes>
     </Router>
   );
