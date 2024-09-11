@@ -15,7 +15,7 @@ const Header: React.FC<HeaderProps> = ({
     <header className={styles.header}>
       <div className={styles.container}>
         <div>
-          <Link to="/product">
+          <Link to="/products">
             <img src="logo.png" alt="Логотип" className={styles.logo} />
           </Link>
         </div>
